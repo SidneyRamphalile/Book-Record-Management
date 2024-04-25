@@ -52,7 +52,7 @@ missed by renewal && subscription date >> pay R150
 
 ## /users
 POST: Create a new user
-GET: Get all the user/s info here
+GET: Get all the users
 
 ## /users/{id}
 GET: Get a user by id
@@ -86,3 +86,21 @@ GET: get all issued books with their fine
 ## npm i nodemon --save-dev
 ## npm run dev
 
+
+
+
+...each
+"name": "Jane"
+      ## "surname": "Doe"
+      ## "email": "user@gmail.com"
+      "subscriptionType": "Premium"
+      "subscriptionDate": "01/01/2022"
+
+
+...data
+{
+   "data": {
+     ##  "name": "sidney",
+     ##  "surname": "ramphalile"
+   }
+}
