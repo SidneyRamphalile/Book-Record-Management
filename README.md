@@ -88,4 +88,21 @@ GET: get all issued books with their fine
 
 
 
+...each
+     ## "name": "Jane",
+     ## "surname": "Doe",
+      "email": "user@email.com",
+      "subscriptionType": "Premium",
+      "subscriptionDate": "01/01/2022"
 
+
+...data
+   "data": {
+       ## "name": "sidney"
+       ## "surname": "ramphalile"
+   }
+
+name: sidney
+surname: ramphalile
+email: user@email.com
+subscriptionType: "Premium"
