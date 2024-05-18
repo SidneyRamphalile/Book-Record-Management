@@ -1,17 +1,22 @@
 const express = require("express");
-const { users } = require("./data/users.json");
-// const { books } = require("./data/books.json");
+const dotenv = require("dotenv");
+
+const DbConnection = require("./databaseConnection");
 
 const userRouter = require('./routes/users'); // it's not necessary to put the .js file extension
 const booksRouter = require("./routes/books");
 
+dotenv.config();
+
 const app = express();
+
+DbConnection();
 
 const PORT = 8081;
 
 app.use(express.json());
 
-
+// http://localhost:8081/users/
 app.get("/", (req, res) => {
   res.status(200).json({
     message: "Server is up and running :)",
